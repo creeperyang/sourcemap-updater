@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "sources": [
+        "css/simple.css",
+        "css/std.css",
+        "css/unusual.css"
+    ],
+    "names": [],
+    "mappings": "AAAA;IACA,UAAA;IACA,WAAA;CACA;;AAEA;IACA,cAAA;IACA,cAAA;CACA;ACRA;IACA,YAAA;IACA;CACA;AACA;IACA;;MAEA;CACA;ACRA;IACA,AAEA;CACA",
+    "file": "concated.css",
+    "sourceRoot": ".."
+}

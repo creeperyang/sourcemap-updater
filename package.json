@@ -1,0 +1,27 @@
+{
+  "name": "sourcemap-updater",
+  "version": "0.0.0",
+  "description": "modify css and update source map",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "ava"
+  },
+  "keywords": [
+    "sourcemap"
+  ],
+  "author": "creeperyang",
+  "license": "MIT",
+  "dependencies": {
+    "postcss": "^5.2.8",
+    "source-map": "^0.5.6"
+  },
+  "devDependencies": {
+    "ava": "^0.17.0"
+  },
+  "engines": {
+    "node": ">=6.0"
+  },
+  "ava": {
+    "sources": "test/*.spec.js"
+  }
+}

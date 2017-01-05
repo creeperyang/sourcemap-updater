@@ -1,0 +1,8 @@
+{
+    "version": 3,
+    "sources": ["css/simple.css", "css/std.css", "css/unusual.css"],
+    "names": [],
+    "mappings": "AAAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;ACRA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;ACRA;AACA;AACA;AACA;AACA",
+    "file": "concated.css",
+    "sourceRoot": ".."
+}
