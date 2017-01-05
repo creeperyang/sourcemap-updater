@@ -1,4 +1,3 @@
-const { join } = require('path')
 const { readFileSync } = require('fs')
 const test = require('ava')
 const update = require('../lib')
@@ -18,7 +17,7 @@ test('should generate correct source map when css changes.', t => {
         readFileSync(`${__dirname}/res/concated.css`),
         readFileSync(`${__dirname}/res/concated.css.map`)
     ], {
-        updater(str, node, type) {
+        updater (str, node, type) {
             // for `prop-value`s, remove all newline of value.
             if (!type && node && node.prop) {
                 node.value = node.value.replace(/\s*\n\s*/g, '')
@@ -36,8 +35,8 @@ test('should generate correct source map when css deletes some lines.', t => {
         readFileSync(`${__dirname}/res/concated.css`),
         readFileSync(`${__dirname}/res/concated.css.map`)
     ], {
-        updater(str, node, type) {
-            // for `prop-value`s, remove all newline of value.
+        updater (str, node, type) {
+            // for `prop-value`s, remove `background-image`
             if (!type && node && node.prop === 'background-image') {
                 return ''
             }
