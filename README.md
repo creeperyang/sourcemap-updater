@@ -4,7 +4,7 @@
 
 > A tool help to modify css and update sourcemap automatically.
 
-Assume that you have a css (maybe generated via `sass/postcss`) and a corresponding sourcemap. If you want to modify the css (such as delete one decl, change a prop value), you could modify directly, but the sourcemap would be inaccurate.
+Assume that you have a css (maybe generated via `sass/postcss`) and a corresponding sourcemap. If you want to modify the css (such as delete one declaration, change a prop value), you could modify directly, but the sourcemap would be inaccurate.
 
 This lib will help you modify css (more convenient/powerful), and  update sourcemap automatically. This means you no longer need to care about sourcemap when you modify css.
 
