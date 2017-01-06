@@ -39,12 +39,18 @@ writeFileSync(`${__dirname}/res/concated.css.map`, res.map)
 
 ## API
 
-**`update(data, options)`**
+**`update(data[, options])`**
 
 - `data` is `Array`, `data[0]` is css content (`String/Buffer`), and `data[1]` is original sourcemap (`String/Buffer/Object`).
-- `options` is `Object`. And `options.updater` is `Function`.
+- `options` is `Object`. And `options.updater` is `Function`, `options.file` is `String`
 
-    `options.updater` is like `function(str, node, type){}`, is the same as [`postcss/builder`](http://api.postcss.org/global.html#builder)
+    `options.updater` is like `function(str, node, type){}`, is the same as [`postcss/builder`](http://api.postcss.org/global.html#builder). You can use it to change css. For the return value of the func:
+        
+        1. If you return `false`, this part string would keep the same.
+        2. If you return `String`, this `string` will be used (as the replacement).
+        3. Otherwise, this part string will be deleted.
+    
+    `options.file` is `String`, the relative file path of the css content. It will be used when original sourcemap is invalid.
 
 
 ## License
