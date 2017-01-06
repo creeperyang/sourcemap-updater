@@ -1,6 +1,10 @@
+# node
 node_modules
 *.log
 
 # system
 .DS_Store
 Thumbs.db
+
+# custom
+._*
