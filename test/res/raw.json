@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "sources": [
+        "from.css"
+    ],
+    "names": [],
+    "mappings": "AAAA;IACI,UAAU;IACV,WAAW;CACd;;AAED;IACI,cAAc;IACd,cAAc;CACjB;AACD;IACI,YAAY;IACZ,qCAAqC;CACxC;AACD;IACI;;MAEE;CACL;AACD;IACI;;MAEE;CACL",
+    "file": "from.css"
+}
